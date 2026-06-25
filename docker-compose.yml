@@ -1,0 +1,9 @@
+services:
+  subledger:
+    build: .
+    ports:
+      - "8000:8000"
+    environment:
+      DATABASE_URL: sqlite:///./subledger.db
+      APP_NAME: SubLedger
+      DEBUG: "true"
